@@ -29,6 +29,10 @@
 <body class="min-h-screen flex items-center justify-center bg-pink-100 overflow-hidden">
 
   <div class="relative text-center p-8 m-3 bg-white rounded-3xl shadow-xl max-w-sm w-full">
+    <button onclick="goToJobWish()"
+      class="mt-6 w-full py-3 bg-pink-500 text-white rounded-xl text-lg font-semibold shadow-md active:scale-95 transition">
+      A special wish for your first day ❤️
+    </button>
 
     <h1 class="text-4xl font-bold text-clifford mb-4">Valentine 💖</h1>
 
@@ -52,6 +56,7 @@
     </div>
   </div>
 
+
   <audio id="loveSound" preload="auto">
     <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_6c2b08c1f0.mp3">
   </audio>
@@ -69,7 +74,7 @@
     noBtn.style.transform = "translateX(-50%)";
 
     function escapeNo(e) {
-      e.preventDefault(); 
+      e.preventDefault();
       attempts++;
 
       navigator.vibrate?.(100);
@@ -104,11 +109,17 @@
       });
 
       setTimeout(() => {
-        window.location.href = "love.html";
-      }, 1200); 
+        alert("💼❤️ This page is a special wish for your first day at work.\nNo matter what, I’m so proud of you.");
+        window.location.href = "first-day.html"; 
+      }, 1200);
     });
-
+    function goToJobWish() {
+      alert("💼❤️ This page is a small wish for your first day at work.\nI’m so proud of you.");
+      window.location.href = "job.html";
+    }
   </script>
+
+
 
 </body>
 

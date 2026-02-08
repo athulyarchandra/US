@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your First Day ❤️</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    @theme {
+      --color-love: #e11d48;
+      --color-soft: #fff1f2;
+    }
+  </style>
+<style>
+  .hearts {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .hearts span {
+    position: absolute;
+    bottom: -10%;
+    font-size: 1rem;
+    opacity: 0.5;
+    animation: floatUp linear infinite;
+  }
+
+  .hearts span:nth-child(1) { left: 10%; animation-duration: 10s; }
+  .hearts span:nth-child(2) { left: 20%; animation-duration: 8s; }
+  .hearts span:nth-child(3) { left: 30%; animation-duration: 12s; }
+  .hearts span:nth-child(4) { left: 40%; animation-duration: 9s; }
+  .hearts span:nth-child(5) { left: 50%; animation-duration: 11s; }
+  .hearts span:nth-child(6) { left: 60%; animation-duration: 10s; }
+  .hearts span:nth-child(7) { left: 70%; animation-duration: 13s; }
+  .hearts span:nth-child(8) { left: 80%; animation-duration: 9s; }
+  .hearts span:nth-child(9) { left: 90%; animation-duration: 11s; }
+  .hearts span:nth-child(10){ left: 95%; animation-duration: 14s; }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(0.7);
+      opacity: 0;
+    }
+    20% { opacity: 0.5; }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+</style>
+
+
+</head>
+
+<body class="min-h-screen bg-gradient-to-b from-pink-100 to-rose-200 flex items-center justify-center px-4">
+
+<div class="relative max-w-sm w-full bg-white rounded-3xl shadow-2xl p-6 text-center overflow-hidden">
+<!-- Floating Hearts Inside Card -->
+<div class="hearts">
+  <span>❤️</span><span>💖</span><span>💕</span><span>💘</span><span>❤️</span>
+  <span>💖</span><span>💕</span><span>💘</span><span>❤️</span><span>💖</span>
+</div>
+
+    <!-- Header -->
+  <h1 class="relative z-10 text-3xl font-extrabold text-love mb-2">
+      Good Luck, My Love ❤️
+    </h1>
+    <p class="text-sm text-gray-500 mb-5">
+      Your first day. A new beginning.
+    </p>
+
+    <!-- Image -->
+    <img
+      src="./images/us3'.jpeg"
+      alt="My strong man"
+      class="w-full h-96 object-cover rounded-2xl shadow-md  mb-6"
+    />
+
+    <!-- Message -->
+    <div class="text-gray-800 text-base leading-relaxed font-medium space-y-4">
+
+      <p>
+        Tomorrow, when you step out for work, I want you to remember one thing —
+        <span class="text-love font-semibold">you didn’t reach here by luck.</span>
+        You reached here because of your hard work, patience, and the fire inside you.
+      </p>
+
+      <p>
+        I know you might feel nervous, excited, or a little scared —
+        and that’s okay. Every great journey starts with a heart full of emotions.
+        Just breathe, smile, and be yourself.
+      </p>
+
+      <p>
+        No matter how your day goes — good or tiring —
+        <span class="text-love font-semibold">I’m always here</span>,
+        cheering for you silently and loving you loudly.
+      </p>
+
+      <p>
+        This job is important, but <span class="font-semibold">you</span> are more important to me.
+        Take care of yourself, believe in yourself, and walk in with confidence —
+        because you deserve this and so much more.
+      </p>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-6 bg-soft rounded-2xl p-4">
+      <p class="text-love font-semibold text-lg">
+        I’m so proud of you 🫶
+      </p>
+      <p class="text-sm text-gray-600 mt-1">
+        Always yours,<br>
+        <span class="font-semibold">Chinjunni 😚❤️</span>
+      </p>
+    </div>
+    <div class="hearts">
+ 
+</div>
+
+  </div>
+  <!-- Floating Hearts Background -->
+
+
+
+</body>
+
+</html>
